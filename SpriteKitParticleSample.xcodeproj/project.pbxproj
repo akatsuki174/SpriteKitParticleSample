@@ -12,6 +12,8 @@
 		2CA19F5E1CDEFAFD001E3326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F5C1CDEFAFD001E3326 /* Main.storyboard */; };
 		2CA19F601CDEFAFD001E3326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F5F1CDEFAFD001E3326 /* Assets.xcassets */; };
 		2CA19F631CDEFAFD001E3326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F611CDEFAFD001E3326 /* LaunchScreen.storyboard */; };
+		2CA19F6E1CDEFEEA001E3326 /* SmokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F6C1CDEFEEA001E3326 /* SmokeParticle.sks */; };
+		2CA19F6F1CDEFEEA001E3326 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F6D1CDEFEEA001E3326 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2CA19F5F1CDEFAFD001E3326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CA19F621CDEFAFD001E3326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CA19F641CDEFAFD001E3326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA19F6C1CDEFEEA001E3326 /* SmokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeParticle.sks; sourceTree = "<group>"; };
+		2CA19F6D1CDEFEEA001E3326 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,22 @@
 			children = (
 				2CA19F581CDEFAFC001E3326 /* AppDelegate.swift */,
 				2CA19F5A1CDEFAFC001E3326 /* ViewController.swift */,
+				2CA19F6B1CDEFEC1001E3326 /* resources */,
 				2CA19F5C1CDEFAFD001E3326 /* Main.storyboard */,
 				2CA19F5F1CDEFAFD001E3326 /* Assets.xcassets */,
 				2CA19F611CDEFAFD001E3326 /* LaunchScreen.storyboard */,
 				2CA19F641CDEFAFD001E3326 /* Info.plist */,
 			);
 			path = SpriteKitParticleSample;
+			sourceTree = "<group>";
+		};
+		2CA19F6B1CDEFEC1001E3326 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CA19F6C1CDEFEEA001E3326 /* SmokeParticle.sks */,
+				2CA19F6D1CDEFEEA001E3326 /* spark.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA19F6F1CDEFEEA001E3326 /* spark.png in Resources */,
 				2CA19F631CDEFAFD001E3326 /* LaunchScreen.storyboard in Resources */,
 				2CA19F601CDEFAFD001E3326 /* Assets.xcassets in Resources */,
 				2CA19F5E1CDEFAFD001E3326 /* Main.storyboard in Resources */,
+				2CA19F6E1CDEFEEA001E3326 /* SmokeParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
