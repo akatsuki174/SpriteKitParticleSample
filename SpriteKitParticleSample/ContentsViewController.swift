@@ -13,6 +13,7 @@ class ContentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.blackColor()
         print(text)
     }
 }
