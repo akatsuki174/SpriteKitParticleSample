@@ -13,10 +13,12 @@
 		2CA19F601CDEFAFD001E3326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F5F1CDEFAFD001E3326 /* Assets.xcassets */; };
 		2CA19F631CDEFAFD001E3326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F611CDEFAFD001E3326 /* LaunchScreen.storyboard */; };
 		2CA19FB71CDF26A7001E3326 /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA19FB61CDF26A7001E3326 /* ContentsViewController.swift */; };
-		2CCCA6D51CE8526600C90C0D /* SmokeParticleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6D41CE8526600C90C0D /* SmokeParticleScene.sks */; };
-		2CCCA6D71CE852D600C90C0D /* SmokeParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCA6D61CE852D600C90C0D /* SmokeParticleScene.swift */; };
+		2CCCA6D51CE8526600C90C0D /* ParticleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6D41CE8526600C90C0D /* ParticleScene.sks */; };
+		2CCCA6D71CE852D600C90C0D /* ParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCA6D61CE852D600C90C0D /* ParticleScene.swift */; };
 		2CCCA6DE1CE8627600C90C0D /* SmokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6DC1CE8627600C90C0D /* SmokeParticle.sks */; };
 		2CCCA6DF1CE8627600C90C0D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6DD1CE8627600C90C0D /* spark.png */; };
+		2CCCA6E21CE8BF3200C90C0D /* BokehParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6E01CE8BF3200C90C0D /* BokehParticle.sks */; };
+		2CCCA6E31CE8BF3200C90C0D /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6E11CE8BF3200C90C0D /* bokeh.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +30,12 @@
 		2CA19F621CDEFAFD001E3326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CA19F641CDEFAFD001E3326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA19FB61CDF26A7001E3326 /* ContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
-		2CCCA6D41CE8526600C90C0D /* SmokeParticleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeParticleScene.sks; sourceTree = "<group>"; };
-		2CCCA6D61CE852D600C90C0D /* SmokeParticleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmokeParticleScene.swift; sourceTree = "<group>"; };
+		2CCCA6D41CE8526600C90C0D /* ParticleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ParticleScene.sks; sourceTree = "<group>"; };
+		2CCCA6D61CE852D600C90C0D /* ParticleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleScene.swift; sourceTree = "<group>"; };
 		2CCCA6DC1CE8627600C90C0D /* SmokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeParticle.sks; sourceTree = "<group>"; };
 		2CCCA6DD1CE8627600C90C0D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		2CCCA6E01CE8BF3200C90C0D /* BokehParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BokehParticle.sks; sourceTree = "<group>"; };
+		2CCCA6E11CE8BF3200C90C0D /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				2CCCA6DC1CE8627600C90C0D /* SmokeParticle.sks */,
 				2CCCA6DD1CE8627600C90C0D /* spark.png */,
+				2CCCA6E01CE8BF3200C90C0D /* BokehParticle.sks */,
+				2CCCA6E11CE8BF3200C90C0D /* bokeh.png */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -89,8 +95,8 @@
 		2CCCA6D31CE851B200C90C0D /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				2CCCA6D41CE8526600C90C0D /* SmokeParticleScene.sks */,
-				2CCCA6D61CE852D600C90C0D /* SmokeParticleScene.swift */,
+				2CCCA6D41CE8526600C90C0D /* ParticleScene.sks */,
+				2CCCA6D61CE852D600C90C0D /* ParticleScene.swift */,
 			);
 			path = SpriteKit;
 			sourceTree = "<group>";
@@ -154,11 +160,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CCCA6D51CE8526600C90C0D /* SmokeParticleScene.sks in Resources */,
+				2CCCA6D51CE8526600C90C0D /* ParticleScene.sks in Resources */,
 				2CCCA6DF1CE8627600C90C0D /* spark.png in Resources */,
 				2CA19F631CDEFAFD001E3326 /* LaunchScreen.storyboard in Resources */,
 				2CCCA6DE1CE8627600C90C0D /* SmokeParticle.sks in Resources */,
 				2CA19F601CDEFAFD001E3326 /* Assets.xcassets in Resources */,
+				2CCCA6E31CE8BF3200C90C0D /* bokeh.png in Resources */,
+				2CCCA6E21CE8BF3200C90C0D /* BokehParticle.sks in Resources */,
 				2CA19F5E1CDEFAFD001E3326 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CCCA6D71CE852D600C90C0D /* SmokeParticleScene.swift in Sources */,
+				2CCCA6D71CE852D600C90C0D /* ParticleScene.swift in Sources */,
 				2CA19F5B1CDEFAFC001E3326 /* ViewController.swift in Sources */,
 				2CA19F591CDEFAFC001E3326 /* AppDelegate.swift in Sources */,
 				2CA19FB71CDF26A7001E3326 /* ContentsViewController.swift in Sources */,

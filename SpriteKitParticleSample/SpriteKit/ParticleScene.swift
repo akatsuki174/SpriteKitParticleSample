@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class SmokeParticleScene: SKScene {
+class ParticleScene: SKScene {
 
     override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor.clearColor()
