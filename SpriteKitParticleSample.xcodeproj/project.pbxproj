@@ -14,6 +14,7 @@
 		2CA19F631CDEFAFD001E3326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F611CDEFAFD001E3326 /* LaunchScreen.storyboard */; };
 		2CA19F6E1CDEFEEA001E3326 /* SmokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F6C1CDEFEEA001E3326 /* SmokeParticle.sks */; };
 		2CA19F6F1CDEFEEA001E3326 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA19F6D1CDEFEEA001E3326 /* spark.png */; };
+		2CA19FB71CDF26A7001E3326 /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA19FB61CDF26A7001E3326 /* ContentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2CA19F641CDEFAFD001E3326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA19F6C1CDEFEEA001E3326 /* SmokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmokeParticle.sks; sourceTree = "<group>"; };
 		2CA19F6D1CDEFEEA001E3326 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		2CA19FB61CDF26A7001E3326 /* ContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				2CA19F581CDEFAFC001E3326 /* AppDelegate.swift */,
 				2CA19F5A1CDEFAFC001E3326 /* ViewController.swift */,
+				2CA19FB61CDF26A7001E3326 /* ContentsViewController.swift */,
 				2CA19F6B1CDEFEC1001E3326 /* resources */,
 				2CA19F5C1CDEFAFD001E3326 /* Main.storyboard */,
 				2CA19F5F1CDEFAFD001E3326 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			files = (
 				2CA19F5B1CDEFAFC001E3326 /* ViewController.swift in Sources */,
 				2CA19F591CDEFAFC001E3326 /* AppDelegate.swift in Sources */,
+				2CA19FB71CDF26A7001E3326 /* ContentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
