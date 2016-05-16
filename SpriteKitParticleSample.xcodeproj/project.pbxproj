@@ -23,6 +23,7 @@
 		2CCCA6EB1CE9F03F00C90C0D /* FirefliesParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6EA1CE9F03F00C90C0D /* FirefliesParticle.sks */; };
 		2CCCA6ED1CE9F47300C90C0D /* MagicParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6EC1CE9F47300C90C0D /* MagicParticle.sks */; };
 		2CCCA6EF1CE9F50500C90C0D /* RainParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6EE1CE9F50500C90C0D /* RainParticle.sks */; };
+		2CCCA6F11CE9F6F600C90C0D /* SnowParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6F01CE9F6F600C90C0D /* SnowParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2CCCA6EA1CE9F03F00C90C0D /* FirefliesParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirefliesParticle.sks; sourceTree = "<group>"; };
 		2CCCA6EC1CE9F47300C90C0D /* MagicParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MagicParticle.sks; sourceTree = "<group>"; };
 		2CCCA6EE1CE9F50500C90C0D /* RainParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RainParticle.sks; sourceTree = "<group>"; };
+		2CCCA6F01CE9F6F600C90C0D /* SnowParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SnowParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				2CCCA6EA1CE9F03F00C90C0D /* FirefliesParticle.sks */,
 				2CCCA6EC1CE9F47300C90C0D /* MagicParticle.sks */,
 				2CCCA6EE1CE9F50500C90C0D /* RainParticle.sks */,
+				2CCCA6F01CE9F6F600C90C0D /* SnowParticle.sks */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				2CCCA6D51CE8526600C90C0D /* ParticleScene.sks in Resources */,
 				2CCCA6EB1CE9F03F00C90C0D /* FirefliesParticle.sks in Resources */,
+				2CCCA6F11CE9F6F600C90C0D /* SnowParticle.sks in Resources */,
 				2CCCA6DF1CE8627600C90C0D /* spark.png in Resources */,
 				2CA19F631CDEFAFD001E3326 /* LaunchScreen.storyboard in Resources */,
 				2CCCA6DE1CE8627600C90C0D /* SmokeParticle.sks in Resources */,
