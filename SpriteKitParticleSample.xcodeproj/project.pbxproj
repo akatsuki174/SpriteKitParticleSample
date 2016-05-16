@@ -20,6 +20,7 @@
 		2CCCA6E21CE8BF3200C90C0D /* BokehParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6E01CE8BF3200C90C0D /* BokehParticle.sks */; };
 		2CCCA6E31CE8BF3200C90C0D /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6E11CE8BF3200C90C0D /* bokeh.png */; };
 		2CCCA6E91CE9354F00C90C0D /* FireParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6E81CE9354F00C90C0D /* FireParticle.sks */; };
+		2CCCA6EB1CE9F03F00C90C0D /* FirefliesParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CCCA6EA1CE9F03F00C90C0D /* FirefliesParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2CCCA6E01CE8BF3200C90C0D /* BokehParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BokehParticle.sks; sourceTree = "<group>"; };
 		2CCCA6E11CE8BF3200C90C0D /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 		2CCCA6E81CE9354F00C90C0D /* FireParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticle.sks; sourceTree = "<group>"; };
+		2CCCA6EA1CE9F03F00C90C0D /* FirefliesParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirefliesParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				2CCCA6E01CE8BF3200C90C0D /* BokehParticle.sks */,
 				2CCCA6E11CE8BF3200C90C0D /* bokeh.png */,
 				2CCCA6E81CE9354F00C90C0D /* FireParticle.sks */,
+				2CCCA6EA1CE9F03F00C90C0D /* FirefliesParticle.sks */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CCCA6D51CE8526600C90C0D /* ParticleScene.sks in Resources */,
+				2CCCA6EB1CE9F03F00C90C0D /* FirefliesParticle.sks in Resources */,
 				2CCCA6DF1CE8627600C90C0D /* spark.png in Resources */,
 				2CA19F631CDEFAFD001E3326 /* LaunchScreen.storyboard in Resources */,
 				2CCCA6DE1CE8627600C90C0D /* SmokeParticle.sks in Resources */,
