@@ -12,7 +12,6 @@ class ParticleScene: SKScene {
 
     override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor.clearColor()
-        
     }
     
     func show(type: String) {
@@ -21,7 +20,7 @@ class ParticleScene: SKScene {
                 return
             }
             let particle = NSKeyedUnarchiver.unarchiveObjectWithFile(path) as! SKEmitterNode
-            particle.position = CGPointMake(CGRectGetMidX(self.frame), 15.0)
+            particle.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
             self.addChild(particle)
         }
     }

@@ -16,15 +16,15 @@ class ContentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor.grayColor()
         self.setupParticle()
     }
     
     func setupParticle() {
-        self.skView.userInteractionEnabled = false
-        self.skView.allowsTransparency = true
+        //skView.allowsTransparency = true // 今回は不要。普通はtrueにする。
+        //skView.userInteractionEnabled = false // 今回は不要。必要であればfalseにする。
         let scene = ParticleScene.unarchiveFromFile("ParticleScene") as! ParticleScene
-        self.skView.presentScene(scene)
+        skView.presentScene(scene)
     }
     
     override func viewDidAppear(animated: Bool) {
