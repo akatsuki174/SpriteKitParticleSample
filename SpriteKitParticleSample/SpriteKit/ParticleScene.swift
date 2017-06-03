@@ -10,17 +10,17 @@ import SpriteKit
 
 class ParticleScene: SKScene {
 
-    override func didMoveToView(view: SKView) {
-        self.backgroundColor = UIColor.clearColor()
+    override func didMove(to view: SKView) {
+        self.backgroundColor = UIColor.clear
     }
     
-    func show(type: String) {
+    func show(_ type: String) {
         if (self.children.count == 0) {
-            guard let path = NSBundle.mainBundle().pathForResource("\(type)Particle", ofType: "sks") else {
+            guard let path = Bundle.main.path(forResource: "\(type)Particle", ofType: "sks") else {
                 return
             }
-            let particle = NSKeyedUnarchiver.unarchiveObjectWithFile(path) as! SKEmitterNode
-            particle.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
+            let particle = NSKeyedUnarchiver.unarchiveObject(withFile: path) as! SKEmitterNode
+            particle.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
             self.addChild(particle)
         }
     }

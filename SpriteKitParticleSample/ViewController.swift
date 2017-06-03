@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     var selectedParticle:String?
-    var selectedRow: NSIndexPath?
+    var selectedRow: IndexPath?
     let particles = ["Bokeh", "Fire", "Fireflies", "Magic", "Rain", "Smoke", "Snow", "Spark"]
     
     override func viewDidLoad() {
@@ -21,10 +21,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         if (selectedRow != nil) {
-            tableView?.deselectRowAtIndexPath(selectedRow!, animated: false)
+            tableView?.deselectRow(at: selectedRow!, animated: false)
         }
     }
     
@@ -32,28 +32,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return particles.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
         cell.textLabel?.text = particles[indexPath.row]
         return cell
     }
     
-    func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+    func tableView(_ table: UITableView, didSelectRowAt indexPath:IndexPath) {
         selectedParticle = particles[indexPath.row]
-        performSegueWithIdentifier("showContentsVC",sender: nil)
+        performSegue(withIdentifier: "showContentsVC",sender: nil)
         selectedRow = indexPath
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if (segue.identifier == "showContentsVC") {
-            let vc: ContentsViewController = (segue.destinationViewController as? ContentsViewController)!
+            let vc: ContentsViewController = (segue.destination as? ContentsViewController)!
             vc.text = selectedParticle
         }
     }
     
-    @IBAction func backFromContentsVC(segue:UIStoryboardSegue){}
+    @IBAction func backFromContentsVC(_ segue:UIStoryboardSegue){}
 }

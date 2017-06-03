@@ -16,7 +16,7 @@ class ContentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = UIColor.gray
         self.setupParticle()
     }
     
@@ -27,7 +27,7 @@ class ContentsViewController: UIViewController {
         skView.presentScene(scene)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let scene = self.skView.scene as! ParticleScene
         if let t = text {
@@ -37,12 +37,12 @@ class ContentsViewController: UIViewController {
 }
 
 extension SKNode {
-    class func unarchiveFromFile(file : NSString) -> SKNode? {
-        if let path = NSBundle.mainBundle().pathForResource(file as String, ofType: "sks") {
-            let sceneData = try! NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe)
-            let archiver = NSKeyedUnarchiver(forReadingWithData: sceneData)
+    class func unarchiveFromFile(_ file : NSString) -> SKNode? {
+        if let path = Bundle.main.path(forResource: file as String, ofType: "sks") {
+            let sceneData = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            let archiver = NSKeyedUnarchiver(forReadingWith: sceneData)
             archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
-            let myScene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as! ParticleScene
+            let myScene = archiver.decodeObject(forKey: NSKeyedArchiveRootObjectKey) as! ParticleScene
             archiver.finishDecoding()
             return myScene
         } else {

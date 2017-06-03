@@ -152,6 +152,7 @@
 					2CA19F541CDEFAFC001E3326 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 5K55PQ8BSJ;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -323,6 +324,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akatsuki174.SpriteKitParticleSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -335,6 +337,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akatsuki174.SpriteKitParticleSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
